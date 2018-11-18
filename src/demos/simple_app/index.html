@@ -69,6 +69,7 @@
           },
 
           add: function(text) {
+            console.log('got this far');
             var arr = this.state.comments ;
             arr.push(text);
             this.setState({comments : arr});
@@ -110,8 +111,6 @@
         ReactDOM.render(<Board />,document.getElementById('container'));
 
     </script>
-<TestVar />
-<TestVar />
-<TestVar />
+
 </body>
 </html>

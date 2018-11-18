@@ -14,24 +14,26 @@
 
     <script type="text/babel">
 
-        var TestVar = React.createClass({
+        var Movie = React.createClass({
 
-          render: function() {
-            return(<div>
-                    <h3>This is my first header</h3>
-                    <p> This is my first paragraph </p>
-                  </div>);
+          render : function() {
+            return (
+              <div>
+                <h1>{this.props.title}</h1>
+                <h2>{this.props.genre}</h2>
+              </div>
+            );
           }
 
         });
 
         ReactDOM.render(
             <div>
-              <TestVar />
-              <TestVar />
-              <TestVar />
-            </div> ,
-            document.getElementById('container')
+              <Movie title = "Interstellar" genre = "science fiction, I guess.." />
+              <Movie title = "Fight Club" genre = "action" />
+              <Movie title = "The Godfather" genre = "action" />
+            </div>
+            ,document.getElementById('container')
         );
 
     </script>

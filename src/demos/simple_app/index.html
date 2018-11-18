@@ -17,17 +17,26 @@
         var TestVar = React.createClass({
 
           render: function() {
-            return(<h3>This is my first one</h3>);
+            return(<div>
+                    <h3>This is my first header</h3>
+                    <p> This is my first paragraph </p>
+                  </div>);
           }
 
         });
 
         ReactDOM.render(
-            < TestVar />,
+            <div>
+              <TestVar />
+              <TestVar />
+              <TestVar />
+            </div> ,
             document.getElementById('container')
         );
 
     </script>
-
+<TestVar />
+<TestVar />
+<TestVar />
 </body>
 </html>

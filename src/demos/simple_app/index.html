@@ -64,7 +64,7 @@
         var Board = React.createClass({
           getInitialState : function() {
             return(
-              {comments : []}
+              {comments : ['usual comment']}
             )
           },
 
@@ -99,7 +99,7 @@
           render : function() {
             return (
               <div>
-                <button onCLick={this.add.bind(null,'Default Text')} className="button-info create" > Add New </button>
+                <button className="button-info create" onCLick={this.add.bind(null,'Default Text')} > Add New </button>
                 <div className="board">
                   {this.state.comments.map(this.eachComment)}
                 </div>
